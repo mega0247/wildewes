@@ -1,0 +1,36 @@
+# Force HTTPS (recommended for all users, especially with VPNs)
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Deny direct access to config folder for security
+<Directory "config">
+    Order deny,allow
+    Deny from all
+</Directory>
+
+# Alternatively, if 'config' is inside public_html (Apache 2.4+)
+<IfModule mod_authz_core.c>
+    <Directory "config">
+        Require all denied
+    </Directory>
+</IfModule>
+
+# Protect email_counter.json so it's not accessible via browser
+<Files "email_counter.json">
+    Require all denied
+</Files>
+
+# Disable directory listing
+Options -Indexes
+
+# Prevent access to .env or other sensitive files if any
+<FilesMatch "^\.">
+    Require all denied
+</FilesMatch>
+
+# Optional: Basic IP whitelist to allow only specific IPs (adjust your IPs)
+# <RequireAny>
+#    Require ip 123.123.123.123
+#    Require ip 111.222.333.444
+# </RequireAny>

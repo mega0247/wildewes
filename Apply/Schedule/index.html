@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Schedule Interview — Wild Ewes Woolery</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f4f5;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 24px;
+    }
+    h2 {
+      color: #111827;
+      font-size: 22px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    p {
+      color: #374151;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin: 16px 0 6px;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 14px 20px;
+      background: #0b66c3;
+      border: none;
+      color: #ffffff;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    button:hover {
+      background: #09519c;
+    }
+    .footer {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #6b7280;
+      text-align: center;
+    }
+    .error {
+      margin-top: 15px;
+      font-size: 14px;
+      text-align: center;
+      color: red;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Schedule Your Interview</h2>
+    <p>
+      You have been selected for Interview scheduled. Please select your preferred date and time for the interview with 
+      <strong>Wild Ewes Woolery – 3rd Party Logistics</strong>. 
+      Once submitted, you will receive a confirmation email.
+    </p>
+
+    <form id="interviewForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="Candidate_Name" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="Candidate_Email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="Candidate_Phone" required placeholder="e.g. 555-123-4567">
+
+      <label for="date">Choose Date</label>
+      <input type="date" id="date" name="Interview_Date" required>
+
+      <label for="time">Choose Time</label>
+      <select id="time" name="Interview_Time" required>
+        <option value="">-- Select a time slot --</option>
+        <option>9:00 AM</option>
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>1:00 PM</option>
+        <option>2:00 PM</option>
+        <option>3:00 PM</option>
+        <option>4:00 PM</option>
+        <option>5:00 PM</option>
+        <option>6:00 PM</option>
+      </select>
+
+      <button type="submit">Confirm Interview</button>
+    </form>
+
+    <div class="error" id="errorMessage">❌ Something went wrong. Please try again.</div>
+
+    <div class="footer">
+      © Wild Ewes Woolery – 3rd Party Logistics
+    </div>
+  </div>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("oHW7JWgGZ0uEyAWN_"); // <-- Replace with your EmailJS Public Key
+    })();
+
+    document.getElementById("interviewForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Fire off EmailJS in the background
+      emailjs.sendForm("service_zp14edh", "template_lkue2zr", this)
+        .catch(function(error) {
+          document.getElementById("errorMessage").style.display = "block";
+        });
+
+      // Instant redirect (0 seconds)
+      window.location.href = "success.html";
+    });
+  </script>
+</body>
+</html>

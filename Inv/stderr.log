@@ -1,0 +1,504 @@
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f17fd537740 (most recent call first):
+  <no Python frame>
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f445035d740 (most recent call first):
+  <no Python frame>
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007fbc5720c740 (most recent call first):
+  <no Python frame>
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f35c3417740 (most recent call first):
+  <no Python frame>
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f0febdef740 (most recent call first):
+  <no Python frame>
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007fc067d60740 (most recent call first):
+  <no Python frame>
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 8: cd: /home/wildewes/virtualenv/public_html/Inv/2.7: No such file or directory
+/usr/local/lsws/fcgi-bin/lswsgi_wrapper: line 9: /home/wildewes/virtualenv/public_html/Inv/2.7/bin/set_env_vars.py: No such file or directory
+Python path configuration:
+  PYTHONHOME = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  PYTHONPATH = '.:/home/wildewes/public_html/Inv/'
+  program name = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  isolated = 0
+  environment = 1
+  user site = 1
+  import site = 1
+  sys._base_executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.base_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.base_exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.platlibdir = 'lib64'
+  sys.executable = '/home/wildewes/virtualenv/public_html/Inv/3.10/bin/python'
+  sys.prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.exec_prefix = '/home/wildewes/virtualenv/public_html/Inv/2.7'
+  sys.path = [
+    '.',
+    '/home/wildewes/public_html/Inv/',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python310.zip',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10',
+    '/home/wildewes/virtualenv/public_html/Inv/2.7/lib64/python3.10/lib-dynload',
+  ]
+Fatal Python error: init_fs_encoding: failed to get the Python codec of the filesystem encoding
+Python runtime state: core initialized
+ModuleNotFoundError: No module named 'encodings'
+
+Current thread 0x00007f4e090e9740 (most recent call first):
+  <no Python frame>
+[2025-08-06 10:28:36,256] ERROR in app: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wildewes/public_html/Inv/app.py", line 264, in index
+    sent = send_email_with_invoice(
+  File "/home/wildewes/public_html/Inv/app.py", line 224, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+[2025-08-06 10:31:34,974] ERROR in app: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wildewes/public_html/Inv/app.py", line 264, in index
+    sent = send_email_with_invoice(
+  File "/home/wildewes/public_html/Inv/app.py", line 224, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+[2025-08-06 10:40:51,417] ERROR in app: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wildewes/public_html/Inv/app.py", line 264, in index
+    generate_invoice(data, filename)
+  File "/home/wildewes/public_html/Inv/app.py", line 224, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+[2025-08-06 10:43:37,847] ERROR in app: Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/wildewes/virtualenv/public_html/Inv/3.10/lib/python3.10/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/wildewes/public_html/Inv/app.py", line 264, in index
+    generate_invoice(data, filename)
+  File "/home/wildewes/public_html/Inv/app.py", line 224, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 265, in index
+    sent = send_email_with_invoice(
+  File "/home/wildewes/public_html/Inv/app.py", line 225, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 265, in index
+    if not os.access(UPLOAD_DIR, os.W_OK):
+  File "/home/wildewes/public_html/Inv/app.py", line 225, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 265, in index
+    if not os.access(UPLOAD_DIR, os.W_OK):
+  File "/home/wildewes/public_html/Inv/app.py", line 225, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 265, in index
+    if not os.access(UPLOAD_DIR, os.W_OK):
+  File "/home/wildewes/public_html/Inv/app.py", line 225, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+    sent = send_email_with_invoice(
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+    sent = send_email_with_invoice(
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    msg.add_alternative(html_body, subtype='html')
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+    for key in ['description', 'rate', 'quantity', 'amount']:
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    alt_part = EmailMessage()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+    data=data
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    smtp.starttls()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+    data=data
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    smtp.starttls()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    'terms': request.form.get('terms', '').strip(),
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    'invoice_number': request.form.get('invoice_number', '').strip(),
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative
+Traceback (most recent call last):
+  File "/home/wildewes/public_html/Inv/app.py", line 253, in index
+    'client_address': request.form.get('client_address', '').strip(),
+  File "/home/wildewes/public_html/Inv/app.py", line 207, in send_email_with_invoice
+    </tr>
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1153, in add_alternative
+    self._add_multipart('alternative', *args, **kw)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1142, in _add_multipart
+    getattr(self, 'make_' + _subtype)()
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1134, in make_alternative
+    self._make_multipart('alternative', ('mixed',), boundary)
+  File "/opt/alt/python310/lib64/python3.10/email/message.py", line 1108, in _make_multipart
+    raise ValueError("Cannot convert {} to {}".format(
+ValueError: Cannot convert mixed to alternative

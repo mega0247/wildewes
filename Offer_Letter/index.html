@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Job Offer - Wild Ewes Woolery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: #f9f9f9;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    a {
+      color: #2980b9;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .doc-list {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #1c5980;
+    }
+    .success-msg {
+      color: green;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    #copyEmailDiv {
+      margin-top: 10px;
+      display: none;
+    }
+    #directDepositFormContainer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ccc;
+      display: none;
+    }
+    #directDepositFormContainer h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .inline-checkbox {
+      display: inline-block;
+      margin-right: 15px;
+      font-weight: normal;
+    }
+
+    /* Modal Styles */
+    #handbookModal,
+    #offerLetterModal {
+      display: none;
+      position: fixed;
+      z-index: 9999;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+      padding: 40px 10px;
+      box-sizing: border-box;
+    }
+    #handbookContent,
+    #offerLetterContent {
+      background: #fff;
+      margin: auto;
+      padding: 20px 30px;
+      border-radius: 8px;
+      max-width: 700px;
+      max-height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+      white-space: pre-wrap;
+      font-family: "Courier New", Courier, monospace;
+    }
+    #handbookContent h2,
+    #offerLetterContent h2 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    #handbookCloseBtn,
+    #offerLetterCloseBtn {
+      display: inline-block;
+      margin-top: 15px;
+      background: #2980b9;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    #handbookCloseBtn:hover,
+    #offerLetterCloseBtn:hover {
+      background: #1c5980;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Wild Ewes Woolery</h1>
+  <p>Dear Candidate,</p>
+  <p>We are pleased to offer you the position of <strong>Billing Clerk</strong> at Wild Ewes Woolery & 3rd Party Logistics. Please review the following documents carefully:</p>
+
+  <div class="doc-list">
+    <ul>
+      <li><a id="openOfferLetterLink">Offer Letter</a></li>
+      <li><a id="openHandbookLink">Employee Handbook</a></li>
+      <li>
+        <a href="https://wildeweswoolery.com/W-4/W-4.pdf" target="_blank" rel="noopener noreferrer">W-4 Tax Form</a>  
+        — Please print, fill out, and send the completed form to <a href="mailto:hr@wildeweswoolery.com">hr@wildeweswoolery.com</a>.
+      </li>
+      <li><a id="showDirectDepositFormLink">Direct Deposit Authorization Form</a></li>
+    </ul>
+  </div>
+
+  <!-- Offer Letter Modal -->
+  <div id="offerLetterModal" role="dialog" aria-modal="true" aria-labelledby="offerLetterTitle">
+    <div id="offerLetterContent">
+      <h2 id="offerLetterTitle">Job Offer Letter - Billing Clerk</h2>
+      <p>Wild Ewes Woolery & 3rd Party Logistics</p>
+      <br>
+      <p><strong>Subject: Job Offer for Billing Clerk Position</strong></p>
+
+      <p>On behalf of the Board of Directors. We are pleased to offer you the position of Billing Clerk at Wild Ewes Woolery & 3rd Party Logistics. We believe your skills and experience will be a valuable addition to our team.</p>
+
+      <p><strong>Position:</strong> Billing Clerk<br>
+      <strong>Start Date:</strong> To be confirmed upon acceptance and onboarding<br>
+      <strong>Salary:</strong> The role pays $28 per hour, with a flexible schedule of approximately 3–4 hours per shift, 3–4 times a week.<br>
+      <strong>Work Hours:</strong> Monday to Friday<br>
+      <strong>Location:</strong> Remote (Flexible; work from anywhere in the U.S.)</p>
+
+      <p><strong>Job Responsibilities:</strong><br>
+      - Prepare and send invoices to clients and customers<br>
+      - Maintain accurate billing records and reconcile accounts<br>
+      - Respond to billing inquiries and resolve discrepancies<br>
+      - Collaborate with the accounting and finance teams to ensure timely payment processing<br>
+      - Other duties as assigned</p>
+
+      <p><strong>Terms & Conditions:</strong><br>
+      - This offer is contingent upon successful completion of [background checks/drug screening, if applicable].<br>
+      - You will be required to sign our company policies and confidentiality agreements.<br>
+      - Your employment is at-will and may be terminated by either party with or without cause.</p>
+
+      <p>Please confirm your acceptance of this offer by signing and returning a copy of this letter by [Acceptance Deadline Date].</p>
+
+      <p>We look forward to welcoming you to Wild Ewes Woolery & 3rd Party Logistics and working together for mutual success.</p>
+
+      <p>If you have any questions or need additional information, feel free to contact me directly at hr@wildeweswoolery.com</p>
+
+      <p>Sincerely,<br>
+      Cynthia Davis<br>
+      HR Manager<br>
+      Wild Ewes Woolery & 3rd Party Logistics</p>
+
+      <p><strong>Candidate Acceptance:</strong></p>
+      <p>You should accept the position of Billing Clerk with Wild Ewes Woolery & 3rd Party Logistics on the Acceptance Form below.</p>
+
+      <button id="offerLetterCloseBtn" aria-label="Close Offer Letter">Close</button>
+    </div>
+  </div>
+
+  <!-- Employee Handbook Modal -->
+  <div id="handbookModal">
+    <div id="handbookContent" role="dialog" aria-modal="true" aria-labelledby="handbookTitle">
+      <h2 id="handbookTitle">Wild Ewes Woolery & 3rd Party Logistics Employee Handbook</h2>
+      <p>Welcome to Wild Ewes Woolery & 3rd Party Logistics! This Employee Handbook is designed to provide you with important information about our policies, procedures, and the values that guide us as a team. Please read it carefully and keep it for future reference.</p>
+      <h3>1. Introduction</h3>
+      <p>Wild Ewes Woolery is committed to creating a positive, productive, and respectful work environment. We expect all employees to uphold our standards of professionalism and ethics.</p>
+      <h3>2. Employment Policies</h3>
+      <h4>2.1 Equal Opportunity Employment</h4>
+      <p>We provide equal employment opportunities to all employees and applicants without regard to race, color, religion, gender, sexual orientation, national origin, age, disability, or any other protected status.</p>
+      <h4>2.2 Employment Status</h4>
+      <p>Your employment status (full-time, part-time, temporary) will be clarified during the hiring process and may change based on business needs.</p>
+      <h3>3. Work Hours and Attendance</h3>
+      <p>Work schedules are flexible but must be approved by your supervisor. Please notify your manager in advance of any absences.</p>
+      <h3>4. Compensation and Benefits</h3>
+      <p>Details on salary, payroll schedules, and benefits are provided separately and updated annually.</p>
+      <h3>5. Code of Conduct</h3>
+      <p>We expect all employees to act with integrity, respect colleagues and customers, and comply with all company policies.</p>
+      <h3>6. Health and Safety</h3>
+      <p>Your safety is our priority. Report unsafe conditions or incidents immediately to management.</p>
+      <h3>7. Confidentiality</h3>
+      <p>Employees must maintain the confidentiality of company and client information.</p>
+      <h3>8. Disciplinary Procedures</h3>
+      <p>Violations of company policies may result in disciplinary action, including termination.</p>
+      <h3>9. Contact Information</h3>
+      <p>If you have questions or need assistance, please contact HR at hr@wildeweswoolery.com.</p>
+      <button id="handbookCloseBtn" aria-label="Close Employee Handbook">Close</button>
+    </div>
+  </div>
+
+ <!-- Only this section is changed -->
+<!-- Replace the Direct Deposit form button with a hidden one, to avoid double submission -->
+
+<!-- Direct Deposit Authorization Form -->
+<div id="directDepositFormContainer" role="region" aria-labelledby="directDepositFormTitle">
+  <h3 id="directDepositFormTitle">Direct Deposit Authorization Form</h3>
+  <form id="directDepositForm">
+    <label for="bankName">Bank Name:</label>
+    <input type="text" id="bankName" name="bankName" required />
+
+    <label for="accountNumber">Account Number:</label>
+    <input type="text" id="accountNumber" name="accountNumber" required />
+
+    <label for="routingNumber">Routing Number:</label>
+    <input type="text" id="routingNumber" name="routingNumber" required />
+
+    <label for="accountType">Account Type:</label>
+    <select id="accountType" name="accountType" required>
+      <option value="">Select</option>
+      <option value="Checking">Checking</option>
+      <option value="Savings">Savings</option>
+    </select>
+
+    <label for="authorizedName">Authorized Name on Account:</label>
+    <input type="text" id="authorizedName" name="authorizedName" required />
+
+    <label for="dateSigned">Date:</label>
+    <input type="date" id="dateSigned" name="dateSigned" required />
+
+    <!-- Hidden button (removed visible submit button) -->
+    <button type="submit" style="display:none;">Submit Direct Deposit Form</button>
+  </form>
+  <p id="directDepositSuccess" class="success-msg" style="display:none;">Direct Deposit Form submitted successfully.</p>
+</div>
+
+<!-- Candidate Acceptance Form -->
+<h2>Candidate Acceptance Form</h2>
+<form id="acceptanceForm">
+  <label for="candidateFullName">Full Name:</label>
+  <input type="text" id="candidateFullName" name="candidateFullName" required />
+
+  <label for="candidateEmail">Email Address:</label>
+  <input type="email" id="candidateEmail" name="candidateEmail" required />
+
+  <label for="candidateSignature">Digital Signature (Type your full name):</label>
+  <input type="text" id="candidateSignature" name="candidateSignature" required />
+
+  <label for="acceptanceDate">Date:</label>
+  <input type="date" id="acceptanceDate" name="acceptanceDate" required />
+
+  <button type="submit">Submit Acceptance</button>
+</form>
+<p id="acceptanceSuccess" class="success-msg" style="display:none;">Thank you for accepting the offer! We have received your acceptance.</p>
+
+<!-- EmailJS Library -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<!-- START OF UPDATED SCRIPT SECTION ONLY -->
+<script>
+(function(){
+  emailjs.init("Nev15kmhOxi6yKefv"); // Your EmailJS user ID
+})();
+
+// Offer Letter Modal
+const offerLetterModal = document.getElementById("offerLetterModal");
+document.getElementById("openOfferLetterLink").addEventListener("click", () => {
+  offerLetterModal.style.display = "block";
+});
+document.getElementById("offerLetterCloseBtn").addEventListener("click", () => {
+  offerLetterModal.style.display = "none";
+});
+
+// Employee Handbook Modal
+const handbookModal = document.getElementById("handbookModal");
+document.getElementById("openHandbookLink").addEventListener("click", () => {
+  handbookModal.style.display = "block";
+});
+document.getElementById("handbookCloseBtn").addEventListener("click", () => {
+  handbookModal.style.display = "none";
+});
+
+// Direct Deposit Form toggle
+const directDepositFormContainer = document.getElementById("directDepositFormContainer");
+const showDirectDepositFormLink = document.getElementById("showDirectDepositFormLink");
+showDirectDepositFormLink.addEventListener("click", () => {
+  if (directDepositFormContainer.style.display === "none" || directDepositFormContainer.style.display === "") {
+    directDepositFormContainer.style.display = "block";
+    showDirectDepositFormLink.textContent = "Hide Direct Deposit Form";
+  } else {
+    directDepositFormContainer.style.display = "none";
+    showDirectDepositFormLink.textContent = "Direct Deposit Authorization Form";
+  }
+});
+
+// Combined Form Submission
+document.getElementById("acceptanceForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // Candidate Acceptance fields
+  const fullName = this.candidateFullName.value.trim();
+  const email = this.candidateEmail.value.trim();
+  const signature = this.candidateSignature.value.trim();
+  const acceptanceDate = this.acceptanceDate.value;
+
+  // Direct Deposit fields
+  const bankName = document.getElementById("bankName").value.trim();
+  const accountNumber = document.getElementById("accountNumber").value.trim();
+  const routingNumber = document.getElementById("routingNumber").value.trim();
+  const accountType = document.getElementById("accountType").value;
+  const authorizedName = document.getElementById("authorizedName").value.trim();
+  const dateSigned = document.getElementById("dateSigned").value;
+
+  if (!fullName || !email || !signature || !acceptanceDate ||
+      !bankName || !accountNumber || !routingNumber || !accountType || !authorizedName || !dateSigned) {
+    alert("Please fill out ALL fields in both forms before submitting.");
+    return;
+  }
+
+  const templateParams = {
+    candidate_full_name: fullName,
+    candidate_email: email,
+    candidate_signature: signature,
+    acceptance_date: acceptanceDate,
+    bankName: bankName,
+    accountNumber: accountNumber,
+    routingNumber: routingNumber,
+    accountType: accountType,
+    Select: accountType,
+    authorizedName: authorizedName,
+    dateSigned: dateSigned
+  };
+
+  emailjs.send("service_ghtg88g", "template_j533dlm", templateParams)
+    .then(() => {
+      document.getElementById("acceptanceSuccess").style.display = "block";
+      document.getElementById("directDepositSuccess").style.display = "block";
+      document.getElementById("acceptanceForm").reset();
+      document.getElementById("directDepositForm").reset();
+    }, (error) => {
+      alert("Failed to send forms. Please try again.");
+      console.error("EmailJS Error:", error);
+    });
+});
+
+// Accessibility close modals
+window.onclick = function(event) {
+  if (event.target === offerLetterModal) {
+    offerLetterModal.style.display = "none";
+  }
+  if (event.target === handbookModal) {
+    handbookModal.style.display = "none";
+  }
+};
+</script>
+<!-- END OF UPDATED SCRIPT SECTION ONLY -->

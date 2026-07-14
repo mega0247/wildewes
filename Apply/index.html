@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Earn Part Time</title>
+
+  <!-- EmailJS SDK v3 -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>emailjs.init("jOM1sUFccYmlFHu9M");</script>
+
+  <style>
+    /* — Layout — */
+    html,body{margin:0;padding:0;height:100%}
+    body{display:flex;flex-direction:column;min-height:100vh;font-family:Georgia,serif;text-align:center;background:#fff}
+    main{flex:1;}
+
+    /* — NAV — */
+    .navbar{background:#003c7c;color:#fff;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:12px 25px}
+    .logo-container{display:flex;align-items:center}
+    .logo-img{height:48px;margin-right:12px}
+    .logo-text{font-weight:700;font-size:22px;line-height:1.1;text-align:left}
+    .logo-text span{font-size:14px;font-weight:400;letter-spacing:.5px}
+    nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+    nav li{margin:0 18px}
+    nav a{color:#fff;text-decoration:none;font-size:18px;font-weight:600}
+    nav a:hover{text-decoration:underline}
+
+    /* — Content — */
+    h1{font-size:40px;margin:50px 0 0}
+    h3{font-weight:normal;color:#444;margin:0 0 30px}
+    .form-container{max-width:400px;margin:0 auto 60px}
+    input,select,button{width:100%;padding:15px;font-size:16px;margin:10px 0;box-sizing:border-box}
+    button{background:#e8d4ef;border:1px solid #b67fd3;color:#7f2d96;font-weight:bold;cursor:pointer}
+    .message-container{max-width:600px;margin:60px auto;text-align:center;display:none}
+
+    /* — NOTE FROM THE MANAGER — */
+    .note-box{max-width:800px;margin:0 auto 40px;border:1px solid #eee;background:#fefefa;text-align:left;padding:18px 22px;cursor:pointer}
+    .note-header{display:flex;align-items:flex-start;font-weight:700}
+    .note-header .icon{font-weight:700;font-size:22px;margin-right:10px}
+    .note-body{margin-top:12px;display:none;line-height:1.45;font-size:17px}
+    .note-box.open .note-body{display:block}
+
+    /* — Footer — */
+    footer{background:#000;color:#fff;padding:20px 25px}
+    footer a{color:#fff;text-decoration:none;margin-right:15px;font-size:14px}
+    .footer-wrap{width:100%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+    footer p{margin:0;font-size:14px}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo-container">
+      <img src="https://i.imgur.com/Tg18DnA.png" alt="Company Logo" class="logo-img">
+      <div class="logo-text">Wild Ewes Woolery</span></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="https://wildeweswoolery.com">Home</a></li>
+        <li><a href="https://wildeweswoolery.com/about">About us</a></li>
+        <li><a href="https://wildeweswoolery.com/index#whyus">Why us?</a></li>
+        <li><a href="https://wildeweswoolery.com/shipper">Shippers</a></li>
+        <li><a href="https://wildeweswoolery.com/carriers">Carriers</a></li>
+        <li><a href="https://wildeweswoolery.com/index#services">Services</a></li>
+        <li><a href="https://wildeweswoolery.com/contact">Contact us</a></li>
+        <li><a href="https://wildeweswoolery.com/careers">Careers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1 id="headline">Start work within the week</h1>
+  <h3>(No experience necessary – Apply in 1 minute)</h3>
+
+  <!-- FORMS -->
+  <div class="form-container">
+    <form id="zip-form">
+      <label><strong>CHECK FOR AN OPENING NEAR YOU</strong><br><small>(Enter your ZIP code)</small></label>
+      <input type="text" id="zip" placeholder="Your zip code" required>
+      <button type="submit">CHECK FOR OPENINGS</button>
+    </form>
+
+    <form id="info-form" style="display:none;">
+      <input name="firstName" placeholder="First Name" required>
+      <input name="lastName"  placeholder="Last Name"  required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="phone" placeholder="Phone Number to Text You" required>
+      <select name="position" required>
+        <option value="" disabled selected>Select Position Near You</option>
+        <option>Customer Service Representative</option>
+        <option>Administrative Assistant</option>
+        <option>Data Entry Clerk</option>
+		<option>Billing Clerk</option>
+        <option>Delivery Driver</option>
+        <option>Feedback Specialist</option>
+		<option>Remote Order Processor</option>
+        <option>Account Payable Clerk</option>
+        <option>Accounts Payable And Receivable Clerk</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="message-container" id="success-msg">
+    <h1>✅ Success! We have received your information.</h1>
+    <p>The next step: a team member will text you from <strong>(818) 296‑2990</strong> or email you about our interview times.</p>
+    <p>Positions are first come, first considered so respond back ASAP when you get our text.</p>
+    <p>We know you want to start work within the week. We'd like to have a short conversation and, if all sounds good, we'll schedule an interview. (Be on the lookout in the next 10 minutes – we're growing fast over here!)</p>
+  </div>
+</main>
+
+  <footer>
+    <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+      <div>
+        <a href="privacy">Privacy Policy</a> |
+        <a href="term">Terms of Use</a>
+      </div>
+      <div>
+        <p style="margin: 0;">Copyright © 2025 - All Rights Reserved - Wild Ewes Woolery</p>
+      </div>
+      <p><a href="index" style="color: white;">◀ Back to Home</a></p>
+    </div>
+  </footer>
+</body>
+</html>
+
+<script>
+/* disable right‑click */
+document.addEventListener('contextmenu', e=>e.preventDefault());
+
+/* ZIP lookup – after success show form and inject manager note */
+document.getElementById("zip-form").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const zip=document.getElementById("zip").value.trim();
+  try{
+    const r=await fetch(`https://api.zippopotam.us/us/${zip}`);
+    if(!r.ok)throw new Error();
+    const place=(await r.json()).places[0];
+    const city=place["place name"],state=place["state abbreviation"];
+
+    // update headline & swap forms
+    document.getElementById("headline").textContent=
+      `Positions are available in ${city}, ${state}`;
+    document.getElementById("zip-form").style.display="none";
+    document.getElementById("info-form").style.display="block";
+
+    // inject NOTE FROM THE MANAGER block (only once)
+    if(!document.getElementById('noteBox')){
+      const noteHTML=`
+        <div class="note-box" id="noteBox">
+          <div class="note-header"><span class="icon">+</span> NOTE FROM THE MANAGER</div>
+          <div class="note-body">
+            We’re filling positions here in <span id="citySpan">${city}</span> on a first‑come, first‑serve basis.
+            Pay is $27.00-$35.00 base – appt., and you get to set your own flexible schedule (full or part‑time).
+            In addition, we do not require any previous work experience. Apply today and you could be
+            working within the week!<br><br>
+            <em>- Jasmine Saucedo, Manager</em>
+          </div>
+        </div>`;
+      const container=document.createElement('div');
+      container.innerHTML=noteHTML;
+      document.querySelector('.form-container').prepend(container.firstElementChild);
+
+      // toggle behavior
+      document.getElementById('noteBox').addEventListener('click',()=>{
+        document.getElementById('noteBox').classList.toggle('open');
+      });
+    }
+  }catch{
+    alert("Please enter a valid U.S. ZIP code.");
+  }
+});
+
+/* EmailJS submit */
+document.getElementById("info-form").addEventListener("submit",function(e){
+  e.preventDefault();
+  const params={
+    fullName:this.firstName.value.trim()+" "+this.lastName.value.trim(),
+    email:this.email.value.trim(),
+    phone:this.phone.value.trim(),
+    position:this.position.value
+  };
+  emailjs.send("service_5100a8l","template_v1qvx99",params,"jOM1sUFccYmlFHu9M")
+    .then(()=>{
+      this.style.display="none";
+      document.getElementById("success-msg").style.display="block";
+    })
+    .catch(err=>{
+      console.error("EmailJS error:",err);
+      alert("Submission failed. Please try again.");
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="google50d9d522194fdce8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Status - Wild Ewes Woolery - 3rd Party Logistics</title>
+  <meta name="description" content="Check your order status at Wild Ewes Woolery - 3rd Party Logistics." />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/image/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/image/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" href="/image/android-chrome-192x192.png">
+  <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
+  <link rel="manifest" href="/image/site.webmanifest">
+  
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-XXXXXXX');
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #1a1a1a;
+      color: white;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #1a1a1a;
+      z-index: -1;
+    }
+    .navbar {
+      background-color: #003366;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      flex-wrap: wrap;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-img {
+      height: 40px;
+      margin-right: 0.5rem;
+    }
+    .logo-text {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .logo-text span {
+      display: block;
+      font-size: 0.65rem;
+      color: #ccc;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .cta {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 2rem;
+      background-color: #222;
+      border-radius: 8px;
+      text-align: center;
+    }
+    input[type="text"], input[type="email"] {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    button {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #004c99;
+    }
+    p.note {
+      font-size: 14px;
+      color: #ccc;
+      margin-top: 20px;
+    }
+
+    /* Mobile adjustments */
+    @media screen and (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .cta {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+
+  <!-- Header -->
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="https://wildeweswoolery.com/image/logo.png" alt="Company Logo" class="logo-img">
+        <div class="logo-text">
+          Wild Ewes Woolery
+          <span>3rd Party Logistics</span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index">Home</a></li>
+          <li><a href="about">About us</a></li>
+          <li><a href="index#whyus">Why us?</a></li>
+          <li><a href="shipper">Shippers</a></li>
+          <li><a href="carriers">Carriers</a></li>
+          <li><a href="index#services">Services</a></li>
+          <li><a href="contact">Contact us</a></li>
+          <li><a href="careers">Careers</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="tel:866-448-3190">866-448-3190</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Check Your Order Status</h1>
+    <p>Please enter your <strong>Order Number</strong> and <strong>Email Address</strong> to view your order status, or enter your <strong>USPS Tracking Number</strong> to track your package.</p>
+    
+    <!-- Order number/email form -->
+    <form>
+      <input type="text" name="orderNumber" placeholder="Order Number" required><br>
+      <input type="email" name="email" placeholder="Email Address" required><br>
+      <button type="submit">Check Status</button>
+    </form>
+
+    <hr style="margin: 30px 0; border-color: #444;">
+
+    <!-- USPS tracking form -->
+    <form id="trackingForm">
+      <input type="text" id="trackingNumber" placeholder="Enter USPS Tracking Number" required><br>
+      <button type="submit">Track Package</button>
+    </form>
+
+    <p class="note">
+      You can also track shipping updates via the tracking link provided in your order confirmation email.
+    </p>
+  </main>
+
+  <script>
+    // USPS tracking redirect
+    document.getElementById('trackingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var tracking = document.getElementById('trackingNumber').value.trim();
+      if(tracking) {
+        var url = 'https://tools.usps.com/go/TrackConfirmAction?tLabels=' + encodeURIComponent(tracking);
+        window.location.href = url;
+      }
+    });
+  </script>
+
+</body>
+</html>

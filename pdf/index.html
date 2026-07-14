@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>InvoiceTrack Portal Login & Generator</title>
+<style>
+  /* Existing CSS untouched */
+  body { font-family: Arial,sans-serif; margin:0; padding:0; background:#f3f3f3; }
+  .navbar { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; background:#004080; color:#fff; }
+  .navbar ul { list-style:none; display:flex; gap:20px; margin:0; padding:0; }
+  .navbar a { color:#fff; text-decoration:none; font-weight:bold; }
+  .logo-container { display:flex; align-items:center; gap:10px; }
+  .logo-text { font-weight:bold; line-height:1.1; }
+  .logo-text span { font-size:0.75em; font-weight:normal; display:block; }
+  .logo-img { height:90px; width:auto; }
+  .cta { background:#0077c8; color:#fff; padding:10px 15px; text-decoration:none; border-radius:5px; }
+  .login-wrapper, .invoice-wrapper { display:flex; justify-content:center; padding:60px 20px; }
+  .invoice-wrapper { align-items:center; min-height:100vh; }
+  .login-container, .invoice-container { background:#fff; padding:40px 30px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.1); max-width:800px; width:100%; }
+  h1, h2 { text-align:center; }
+  .form-group, label { margin-bottom:15px; display:block; }
+  input, button { width:100%; padding:10px; font-size:14px; box-sizing:border-box; margin-top:5px; }
+  button { background:#0073e6; color:#fff; border:none; border-radius:6px; font-size:16px; cursor:pointer; }
+  button:hover { background:#005bb5; }
+  .footer-note { margin-top:25px; font-size:12px; text-align:center; color:#888; }
+  table { width:100%; border-collapse:collapse; margin-top:20px; }
+  th, td { border:1px solid #ddd; padding:8px; text-align:center; }
+  th { background:#f0f0f0; }
+  .add-row { margin-top:10px; background:none; border:none; color:blue; text-decoration:underline; cursor:pointer; }
+  #status { margin-top:15px; font-weight:bold; }
+  #invoice-section { display:none; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <div class="logo-container">
+      <img src="https://wildeweswoolery.com/image/logo.png" alt="Company Logo" class="logo-img" />
+      <div class="logo-text">
+        Wild Ewes Woolery
+        <span>3rd Party Logistics</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="https://wildeweswoolery.com">Home</a></li>
+        <li><a href="https://wildeweswoolery.com/about">About us</a></li>
+        <li><a href="https://wildeweswoolery.com/index#whyus">Why us?</a></li>
+        <li><a href="https://wildeweswoolery.com/shipper">Shipper</a></li>
+        <li><a href="https://wildeweswoolery.com/carriers">Carriers</a></li>
+        <li><a href="https://wildeweswoolery.com/index#services">Services</a></li>
+        <li><a href="https://wildeweswoolery.com/contact">Contact us</a></li>
+        <li><a href="https://wildeweswoolery.com/careers">Careers</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="tel:840-242-7954">840-242-7954</a>
+  </div>
+</header>
+
+<div id="login-section" class="login-wrapper">
+  <div class="login-container">
+    <h1>Wild Ewes Woolery & 3rd Party Logistic</h1>
+    <h2>Invoicing & Payment Tracking Portal</h2>
+    <form onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label for="email">Company Email</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="form-group">
+        <label for="employeeId">Employee ID</label>
+        <input type="text" id="employeeId" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+      </div>
+      <button type="submit">Log In</button>
+    </form>
+    <div class="footer-note">
+      Need help? Contact HR or IT Support at support@wildeweswoolery.com
+    </div>
+  </div>
+</div>
+
+<div id="invoice-section" class="invoice-wrapper">
+  <div class="invoice-container">
+    <h1>Generate Invoice</h1>
+    <form id="invoice-form">
+      ...
+    </form>
+    <div id="status"></div>
+  </div>
+</div>
+
+<!-- Live Chat Widget -->
+<div id="chat-icon" style="position: fixed; bottom: 20px; right: 20px; background: #007bff; color: #fff; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 28px; box-shadow: 0 4px 6px rgba(0,0,0,0.3); z-index: 9999;">💬</div>
+
+<div id="chat-box" style="position: fixed; bottom: 90px; right: 20px; width: 300px; height: 400px; background: #fff; border: 1px solid #ccc; border-radius: 10px; display: none; flex-direction: column; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 9999;">
+  <div style="background: #007bff; color: #fff; padding: 10px; border-radius: 10px 10px 0 0;">Live Chat</div>
+  <div id="messages" style="flex: 1; padding: 10px; overflow-y: auto; font-size: 14px;"></div>
+  <div style="padding: 8px; border-top: 1px solid #ccc;">
+    <input id="username" placeholder="Your name" style="width: 100%; padding: 6px; margin-bottom: 5px;" />
+    <input id="message" placeholder="Type a message..." style="width: 80%; padding: 6px;" />
+    <button id="send" style="width: 18%; padding: 6px; background: #007bff; color: #fff; border: none; border-radius: 4px;">Send</button>
+  </div>
+</div>
+
+<script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+<script>
+const chatIcon = document.getElementById("chat-icon");
+const chatBox = document.getElementById("chat-box");
+const messages = document.getElementById("messages");
+const usernameInput = document.getElementById("username");
+const messageInput = document.getElementById("message");
+const sendBtn = document.getElementById("send");
+
+let socket = io(); // connect to server
+let joined = false;
+let myName = "";
+
+// toggle chat box
+chatIcon.addEventListener("click", () => {
+  chatBox.style.display = chatBox.style.display === "none" ? "flex" : "none";
+});
+
+// send on Enter
+messageInput.addEventListener("keypress", (e) => {
+  if(e.key === "Enter") { sendBtn.click(); e.preventDefault(); }
+});
+
+// send message
+sendBtn.addEventListener("click", () => {
+  myName = usernameInput.value.trim() || "Guest";
+  const text = messageInput.value.trim();
+
+  if(!joined && myName !== "") {
+    socket.emit("visitor_join", myName); // join queue
+    joined = true;
+  }
+
+  if(text !== "") {
+    socket.emit("chat_message", { fromName: myName, message: text }); // FIXED property name
+    appendMessage({ user: myName, message: text });
+    messageInput.value = "";
+  }
+});
+
+// append messages
+function appendMessage(data) {
+  const div = document.createElement("div");
+  div.textContent = data.user + ": " + data.message;
+  messages.appendChild(div);
+  messages.scrollTop = messages.scrollHeight;
+}
+
+// receive messages from server/admin
+socket.on("chat_message", (data) => {
+  if(data && data.fromName && data.message) {
+    appendMessage({ user: data.fromName, message: data.message });
+  }
+});
+
+// optional: assign visitor ID for per-visitor chat (server handles it)
+socket.on("assign_visitor_id", id => { /* store if needed */ });
+
+// optional: start chat when picked by admin
+socket.on("chat_start", ({ adminName }) => {
+  appendMessage({ user: "System", message: `You are now chatting with ${adminName}` });
+});
+</script>

